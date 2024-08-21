@@ -13,6 +13,9 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome cdn -->
+    <script src="https://kit.fontawesome.com/651adfbaf7.js" crossorigin="anonymous"></script>
+
     <!-- Tailwind CSS + DaisyUI cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -27,6 +30,9 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              customGray: "#494949",
+              customLightGreen: "rgba(171, 239, 95, 0.5)",
+              customGreen: "#ABEF5F",
             },
           },
         },
@@ -40,6 +46,37 @@
     </style>
   </head>
   <body class="font-manrope">
-    Rinterio Landing Page
+    <header class="container mx-auto">
+      <!-- Banner Section -->
+      <div class="hero">
+        <div class="hero-content text-center">
+          <div>
+            <div class="flex justify-center">
+              <img src="./assets/banner.png" alt="" />
+            </div>
+            <h1
+              class="text-[28px] md:text-4xl lg:text-[64px] leading-8 md:leading-[80px] font-extrabold py-6"
+            >
+              A barn house of this design has a striking appearance
+            </h1>
+            <p
+              class="text-base text-customGray font-medium leading-[26px] pb-8 w-9/12 mx-auto"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents, and large windows that flood the space with natural
+              light.
+            </p>
+            <button class="btn bg-customLightGreen border border-customGreen rounded-[32px]">
+              Get Started <i class="fa-solid fa-arrow-right -rotate-45 p-[10px] bg-customGreen rounded-full"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto"></main>
+
+    <footer></footer>
   </body>
 </html>
