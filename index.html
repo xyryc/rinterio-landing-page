@@ -34,6 +34,7 @@
             colors: {
               clifford: "#da373d",
               customGray: "#494949",
+              customGray2: "#737373",
               customLightGreen: "rgba(171, 239, 95, 0.5)",
               customLightGreen2: "rgba(171, 239, 95, 0.2)",
               customGreen: "#ABEF5F",
@@ -96,10 +97,93 @@
     </header>
 
     <main>
+      <!-- About Us, Stats, Work Process section -->
+      <section class="bg-gray-100 py-24">
+        <!-- About Us container -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-9 max-w-screen-xl place-items-center justify-center container mx-auto px-6 lg:px-0"
+        >
+          <!-- text content -->
+          <div class="relative">
+            <img
+              class="absolute -top-16 -left-16 hidden lg:block"
+              src="./assets/Vector.png"
+              alt=""
+            />
+            <div
+              class="flex flex-col justify-center items-center text-center lg:text-left lg:items-start"
+            >
+              <button class="btn btn-sm rounded-3xl bg-white">
+                <i class="fa-solid fa-arrow-right"></i>
+                About Us
+              </button>
+              <h1 class="text-[40px] font-bold pt-4">
+                We design thoughtful, liveable spaces
+              </h1>
+              <p
+                class="text-customGray text-base font-medium leading-[26px] py-6"
+              >
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+            </div>
+
+            <!-- card container -->
+            <div class="flex flex-col sm:flex-row lg:flex-col gap-6">
+              <div class="flex gap-6 p-6 bg-white rounded-2xl">
+                <img
+                  class="h-full sm:h-10 lg:h-full"
+                  src="./assets/commercial.png"
+                  alt=""
+                />
+                <div>
+                  <h3 class="text-xl font-extrabold">Commercial</h3>
+                  <p
+                    class="text-base font-medium text-customGray2 leading-[26px]"
+                  >
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-6 p-6 bg-white rounded-2xl">
+                <img
+                  class="h-full sm:h-10 lg:h-full"
+                  src="./assets/residential.png"
+                  alt=""
+                />
+                <div>
+                  <h3 class="text-xl font-extrabold">Commercial</h3>
+                  <p
+                    class="text-base font-medium text-customGray2 leading-[26px]"
+                  >
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image content -->
+          <div>
+            <img class="rounded-2xl" src="./assets/Rectangle.png" alt="" />
+          </div>
+
+          <!-- Stats Container -->
+          <div></div>
+
+          <!-- Work Process -->
+          <div></div>
+        </div>
+      </section>
+
       <!-- Articles and News section -->
       <section class="bg-gray-100 py-24">
         <!-- content container -->
-        <div class="container mx-auto py-24 px-6 md:px-0">
+        <div class="container mx-auto px-6 md:px-0">
           <!-- title container -->
           <div
             class="flex flex-col justify-center items-center text-center mb-8"
@@ -120,16 +204,16 @@
 
           <!-- Card Container -->
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center place-items-center gap-6"
+            class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-center justify-center place-items-center gap-6"
           >
             <!-- Card 1 -->
-            <div class="card bg-base-100 w-full sm:w-[374px]">
-              <div class="p-6">
+            <div class="card bg-base-100 w-full md:w-[374px]">
+              <div class="p-6 flex flex-col sm:flex-row md:flex-col gap-4">
                 <figure>
                   <img
                     src="./assets/article1.png"
                     alt="Shoes"
-                    class="rounded-2xl"
+                    class="rounded-2xl w-full sm:h-full sm:object-cover"
                   />
                 </figure>
                 <div class="pt-4">
@@ -192,13 +276,13 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="card bg-base-100 w-full sm:w-[374px]">
-              <div class="p-6">
+            <div class="card bg-base-100 w-full md:w-[374px]">
+              <div class="p-6 flex flex-col sm:flex-row md:flex-col gap-4">
                 <figure>
                   <img
                     src="./assets/article2.png"
                     alt="Shoes"
-                    class="rounded-2xl"
+                    class="rounded-2xl w-full sm:h-full sm:object-cover"
                   />
                 </figure>
                 <div class="pt-4">
@@ -261,13 +345,13 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="card bg-base-100 w-full sm:w-[374px]">
-              <div class="p-6">
+            <div class="card bg-base-100 w-full md:w-[374px]">
+              <div class="p-6 flex flex-col sm:flex-row md:flex-col gap-4">
                 <figure>
                   <img
                     src="./assets/article3.png"
                     alt="Shoes"
-                    class="rounded-2xl"
+                    class="rounded-2xl w-full sm:h-full sm:object-cover"
                   />
                 </figure>
                 <div class="pt-4">
@@ -333,9 +417,9 @@
       </section>
 
       <!-- Contacts Section -->
-      <section class="background-paper m-1">
+      <section class="background-paper py-24 m-1">
         <!-- content container -->
-        <div class="container mx-auto py-24 px-6 md:px-0">
+        <div class="container mx-auto px-6 md:px-0">
           <!-- title container -->
           <div
             class="flex flex-col justify-center items-center text-center mb-8"
